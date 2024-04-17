@@ -1,0 +1,19 @@
+def converter_nota_para_conceito(nota):
+    if nota >= 86:
+        return 'A'
+    elif nota >= 61:
+        return 'B'
+    elif nota >= 36:
+        return 'C'
+    elif nota >= 1:
+        return 'D'
+    else:
+        return 'E'
+
+# Lista de notas numéricas
+notas_numericas = [85, 95, 72, 40, 20, 0]
+
+# Converter e exibir as notas de conceito correspondentes
+for nota in notas_numericas:
+    conceito = converter_nota_para_conceito(nota)
+    print(f"Nota: {nota} => Conceito: {conceito}")
